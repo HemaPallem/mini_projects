@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+/*NAV BAR*/
+.navigation_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+    width:100%;
+    background-color: #ffffff;
+    border-bottom: 4px solid #f6f6f6;
+}
+.logo{
+    margin-left: 2%;
+}
+.action_bar{
+    margin-right: 2%;
+}
+.myntra_logo{
+    display: inline-block;
+    height: 36px;
+    width: 53px;
+    background-image: url("C:/Users/palle/HTML/mini_projects/projects/Myntra clon/logo.jpeg");
+    background-size: cover;
+}
+.nav_bar{
+    width: 515px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav_bar a{
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: .3px;
+    color: #282c3f;
+    font-weight: 700;
+    padding: 25px 0 ;
+}
+.nav_bar a:hover{
+    border-bottom: 3px solid pink;
+}
+#men{
+    border-bottom-color: orangered;
+}
+#women{
+    border-bottom-color: rgb(231, 97, 153);
+}
+#kids{
+    border-bottom-color: rgb(207, 104, 66); 
+}
+#hl{
+    border-bottom-color: rgb(241, 175, 32);
+}
+#beauty{
+    border-bottom-color: rgb(91, 225, 243);
+}
+#studio{
+    border-bottom-color: orangered;
+}
+.nav_bar sup{
+    color: #FF3FF6;
+}
+/*Search BAR*/
+.search_bar{
+    height: 40px;
+    min-width: 200px;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.search_icon{
+    background-color: #F5F5F6;
+    border-radius: 4px 0 0 4px;
+    height: 40px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #282c3f;
+}
+.search_input{
+    background-color: #F5F5F6;
+    color: #6967e6;
+    border: 0;
+    border-radius: 0 4px 4px 0;
+    flex-grow: 1;
+    height: 40px;
+}
+.search_input:focus {
+    background-color: #ffffff;
+    outline: none; /* Remove the default focus outline */
+    border: none;  /* Remove the border when focused */
+  }
+  /*Action Bar*/
+.action_container{
+    display: flex;
+    min-width: 200px;
+}
+.action_bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    width:200px;
+}
+.profile,.wishlist,.bag{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.action_bar span{
+    font-size: 12px;
+    font-weight: 700;
+}
+/*MAIN SECTION*/
+.headsection1 {
+    height: 80px;
+    width: 100%;
+    overflow: hidden; /* Ensure no overflow */
+}
+.headsection1 img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    object-fit: cover;
+    display: block;
+}
+.headsection2{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap:nowrap;
+    gap:0;
+}
+.img1{
+    flex-grow: 1;
+}
+.coupns{
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+.image{
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    object-fit: cover;
+}
+.offers{
+    display: flex;
+}
+.shopping{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.shopping img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+/*footer*/
+footer{
+    background-color: #FAFBFC;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    color: #696B79;
+    border-top: 4px solid #f6f6f6;
+}
+footer h5{
+    color: #282C3F;
+    text-transform:uppercase;
+    padding:19px 0px 12px;
+}
+footer ul li{
+    text-transform:capitalize;
+    padding:0px 0px 5px;
+}
+.id1{
+    padding: 14px 0px 5px 0px;
+}
+#appimg{
+    padding-bottom: 25px;
+}
+.app,.socialmedia{
+    display: inline-block;
+}
+.app img{
+    height: 45px;
+    width: 200px;
+    margin-right: 10px;
+}
+.socialmedia img{
+    margin-right: 15px;
+    height: 20px;
+    width: 20px;
+}   
+.promises{
+    display: inline-block;
+    margin-top: 19px;
+}
+.promises div{
+    margin-bottom: 30px;
+}
+.promises img{
+    height:50px;
+    width:48px;
+}
+.promises a{
+    text-decoration: none;
+    color: #696B79;
+}
+.section{
+    display: flex;
+}
+.section img{
+    margin-right: 10px;
+}
+footer strong{
+    color: #282C3F;
+}
+/*STICKY-TEXT*/
+.sticky-text {
+    position: fixed;
+    top: 30%;
+    right: 0;
+    background-color: #535766;
+    padding: 10px;
+    font-size: 18px;
+    z-index: 1000;
+    writing-mode:vertical-lr; 
+    text-orientation: sideways-right;
+}

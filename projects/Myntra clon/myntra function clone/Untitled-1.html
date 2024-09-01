@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select with Checkboxes</title>
+    <style>
+        .checkboxes {
+            display: none; /* Initially hide the checkboxes */
+        }
+    </style>
+</head>
+<body>
+    <select id="select" multiple>
+        <option value="default">Select</option>
+    </select>
+    <div id="checkboxes" class="checkboxes">
+        <input type="checkbox" id="option1" name="option1">
+        <label for="option1">Option 1</label><br>
+        <input type="checkbox" id="option2" name="option2">
+        <label for="option2">Option 2</label><br>
+    </div>
+
+    <script>
+        document.getElementById("select").addEventListener("click", function() {
+            var checkboxes = document.getElementById("checkboxes");
+            if (checkboxes.style.display === "none") {
+                checkboxes.style.display = "block";
+            } else {
+                checkboxes.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
